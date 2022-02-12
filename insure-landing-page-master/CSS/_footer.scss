@@ -1,0 +1,110 @@
+#footer {
+  background-color: $VeryLightGray;
+  background-image: url(./../images/bg-pattern-footer-mobile.svg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  .container {
+    padding: 2rem 0;
+    margin-top: 15rem;
+    padding-top: 7rem;
+
+    .footer-top-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid $DarkGrayishViolet;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      #footer-logo {
+        margin-bottom: 2rem;
+      }
+      .social-media-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+
+        .icon:hover {
+          svg {
+            path:hover {
+              fill: $DarkViolet;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .footer-link-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        a {
+          font-weight: 700;
+          color: $DarkViolet;
+          margin: 0.75rem 0;
+
+          &:first-child {
+            color: $DarkGrayishViolet;
+          }
+          &:hover {
+            border-bottom: 1px solid $DarkViolet;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #footer {
+    background-image: url(./../images/bg-pattern-footer-desktop.svg);
+    background-size: 40%;
+    .container {
+      .footer-top-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 2rem;
+
+        .social-media-icons {
+          margin: 0;
+        }
+
+        #footer-logo {
+          margin: 0;
+        }
+      }
+
+      .footer-links {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .footer-link-box {
+          text-align: left;
+        }
+        .footer-link-box:nth-child(3) {
+          margin-top: -40px;
+        }
+        .footer-link-box:nth-child(4) {
+          margin-top: -40px;
+        }
+      }
+    }
+  }
+}

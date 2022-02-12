@@ -1,0 +1,66 @@
+$DarkViolet: hsl(256, 26%, 20%);
+$GrayishBlue: hsl(216, 30%, 68%);
+$VeryDarkViolet: hsl(270, 9%, 17%);
+$DarkGrayishViolet: hsl(273, 4%, 51%);
+$VeryLightGray: hsl(0, 0%, 98%);
+$DmSerifDisplay: "DM Serif Display", serif;
+$Karla: "Karla", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  font-family: $Karla;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+.container {
+  // border: 1px solid black;
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $DmSerifDisplay;
+}
+
+p {
+  font-family: $Karla;
+  color: $DarkGrayishViolet;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+#close {
+  cursor: pointer;
+}
+
+.btn {
+  outline: none;
+}
